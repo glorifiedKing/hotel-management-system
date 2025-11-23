@@ -17,9 +17,14 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+
+
+        // Seed restaurant and kitchen data
+        $this->call([
+            PermissionSeeder::class,
+            RoleSeeder::class,
+            HotelManagementSeeder::class,
+            RestaurantKitchenSeeder::class,
         ]);
     }
 }
