@@ -27,7 +27,7 @@ class RestaurantPOS extends Page implements HasForms
 
     protected static ?int $navigationSort = 1;
 
-    protected string $view;
+    protected string $view = 'filament.pages.restaurant-p-o-s';
 
     public $selectedRestaurant = null;
     public $selectedTable = null;
@@ -41,7 +41,6 @@ class RestaurantPOS extends Page implements HasForms
     public function mount(): void
     {
         $this->cart = [];
-        $this->view = 'filament.pages.restaurant-p-o-s';
 
         // Auto-select first active restaurant if available
         $firstRestaurant = Restaurant::where('is_active', true)

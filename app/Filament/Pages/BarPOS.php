@@ -4,6 +4,7 @@ namespace App\Filament\Pages;
 
 use Filament\Pages\Page;
 use App\Models\RestaurantTable;
+use App\Models\Restaurant;
 use App\Models\Service;
 use App\Models\KitchenOrder;
 use App\Models\KitchenOrderItem;
