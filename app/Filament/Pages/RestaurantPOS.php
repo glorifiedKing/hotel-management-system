@@ -14,6 +14,7 @@ use Filament\Forms\Contracts\HasForms;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use BackedEnum;
+use UnitEnum;
 
 class RestaurantPOS extends Page implements HasForms
 {
@@ -22,6 +23,8 @@ class RestaurantPOS extends Page implements HasForms
     protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-building-storefront';
 
     protected static ?string $navigationLabel = 'Restaurant POS';
+
+    protected static string | UnitEnum | null $navigationGroup = 'Point of Sale';
 
     protected static ?string $title = 'Restaurant Point of Sale';
 

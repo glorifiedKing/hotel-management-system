@@ -8,10 +8,13 @@ use App\Models\KitchenOrderItem;
 use App\Models\Kitchen;
 use Filament\Notifications\Notification;
 use BackedEnum;
+use UnitEnum;
 
 class KitchenDisplay extends Page
 {
     protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-fire';
+
+    protected static string | UnitEnum | null $navigationGroup = 'Point of Sale';
 
     protected static ?string $navigationLabel = 'Kitchen Display';
 

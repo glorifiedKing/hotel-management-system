@@ -13,12 +13,15 @@ use Filament\Forms\Contracts\HasForms;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use BackedEnum;
+use UnitEnum;
 
 class BarPOS extends Page implements HasForms
 {
     use InteractsWithForms;
 
     protected static string | BackedEnum | null $navigationIcon = 'heroicon-o-beaker';
+
+    protected static string | UnitEnum | null $navigationGroup = 'Point of Sale';
 
     protected static ?string $navigationLabel = 'Bar POS';
 
