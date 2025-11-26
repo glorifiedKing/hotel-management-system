@@ -19,7 +19,7 @@ class KitchenOrderResource extends Resource
 {
     protected static ?string $model = KitchenOrder::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedShoppingCart;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedAdjustmentsVertical;
 
     protected static string | UnitEnum | null $navigationGroup = 'Point of Sale';
 
